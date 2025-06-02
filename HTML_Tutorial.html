@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core HTML</title>
+</head>
+
+<body>
+    <header>
+        <h2><b>Login page</b></h2>
+    </header>
+    <main>
+
+        <form action="/index.php" method="POST" enctype ="multipart/form-data">
+            Username: <lable for = "username"> </lable>
+            <input type ="text" required id = "username" placeholder = "your name" minlength ="6" maxlength = "20"/> 
+            <br> <br>
+
+            <lable for ="password">Password: </lable> 
+            <input type ="password" required id ="password" placeholder ="type password" minlength = "6" maxlength = "20"/>
+            <br> <br>
+
+            <lable for = "email"> Email: </lable>
+            <input type ="email" placeholder = "abc@xyz.com" id ="email"/>
+            <br> <br>
+
+            <lable for ="Contact Info:">Contact Info:</lable>
+            <input type ="tel" placeholder ="123-456-7890" id ="contact info" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+            <br> <br>
+
+            <lable for ="Birth date:">Birth date:</lable>
+            <input type ="date" id="Birth date" />
+            <br> <br>
+
+            <lable for ="Quantity">Quantity:</lable>
+            <input type ="number" id="Quantity" Placeholder ="1" min="0" max="100"/>
+            <br> <br>
+
+            <lable for ="Status">Status:</lable>
+
+            <lable for ="Mr">Mr</lable>
+            <input type="radio" id ="Mr" value="Mr" name="Status">
+            <lable for ="Ms">Ms</lable>
+            <input type="radio" id ="Ms"value ="Ms" name="Status">
+            <lable for ="Dr">Dr</lable>
+            <input type="radio" id ="Dr" value ="Dr" name="Status">
+            <br> <br>
+
+            <lable for ="payment">Payment options:</lable>
+            <select id="Payment">
+                <option value = "Credit card">Credit card</option>
+                <option value ="Debit card">Debit card</option>
+                <option value ="Cash on deliver">Cash on deliver</option>
+                <option value ="UPI">UPI</option>
+            </select>
+            <br> <br>
+
+            <lable for ="check">Save:</lable>
+            <input type ="checkbox" id ="check"/>
+            <br> <br>
+
+            <lable for ="File">File:</lable>
+            <input type ="file" id ="File" accept ="image/png,image/jpeg">
+            <br> <br>
+
+            <lable for ="Feedback">Feedback:</lable>
+            <textarea id ="Feedback" placeholder="Write a feedback" rows="3" cols="25"></textarea>
+            <br><br>
+            
+            <input type ="reset"/>
+            <br><br>
+
+            <input type = "submit"/>
+        </form>
+    </main>
+</body>
+
+</html>
