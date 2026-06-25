@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-
-    <header>
-      <h1>Welcome to My Website</h1>
-      </header>
-    <laber id = "Count">0</laber>
-    <br>
-    <div id="container">
-    <button id ="decrease">Decrease</button>
-    <button id ="increase">Increase</button>
-    <button id ="reset">Reset</button>
-    </div>
+<!DOCTYPE htm1>
+<html ng-app="searchApp">
+<head>
+<title>Search App</title>
+<script src="https://code.angulaijs.org/1.8.2/angular.min.js"></script>
+<script>
+var app = angular.module('searchApp', []); app.contro11er('SearchController', function($scope) (
+$scope.searchQuery = ";
+$scope.submittedSearch = ";
+// Method to handle keyup event (Enter key press)
+$scope.onKeyUp = function(event) { if(event.keyCode -— 13) ( ff 13 is the Enter key
+$scope.submitSearch();
 
 
-    <script src="index.js"></script>
-  </body>
-</html>
+// Method to handle search submission
+$scope.submitSearch = function() (
+$scope.submittedSearch = $scope.searchQuery;
+$scope.searchQuery = "; ff Optional: clear the search box after submitting
+
+
+</script>
+</head>
+<body ng-contro11er="SearchContro11er">
+<div>
+<1abe1 foi="searchBox">Search: </la>
+<input	type="text"	id="searchBox"	ng-model="searchQuery" ng-keyup="onKeyUp($event)" placeho1der="Press Enter to search" />
+<p ng-if="submittedSearch">You searched for: (( submittedsearch }}</p>
+</div>
+</body>
+</htm1>

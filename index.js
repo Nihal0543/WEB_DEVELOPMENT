@@ -1,20 +1,12 @@
-const decrese = document.getElementById("decrease");
-const increase = document.getElementById("increase");   
-const reset = document.getElementById("reset");
-const Count = document.getElementById("Count");
-let countValue = 0;
+// const numbers = [1, 2, 3, 4, 5];
 
-increase.onclick = function() {
-    countValue++;
-    Count.textContent=countValue;
-}
+// const cube = numbers.map(function(num) {
+//     return Math.pow(num, 3);
+// });
 
-decrease.onclick = function() {
-    countValue--;
-    Count.textContent=countValue;
-}
+// console.log(cube);
 
-reset.onclick = function() {
-    countValue=0;
-    Count.textContent=countValue;
-}
+// const sum = numbers.reduce(function(accumulator, currentValue) {
+//     return accumulator + currentValue;
+// });
+// console.log(sum);
