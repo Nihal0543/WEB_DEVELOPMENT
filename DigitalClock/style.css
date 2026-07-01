@@ -1,0 +1,16 @@
+body{
+    background-image: url("Images/onboard.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+#clock {
+    font-family: 'monospace', monospace;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    text-color: hsla(0, 0%, 100%, 0.1);
+}
